@@ -57,7 +57,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
   background:linear-gradient(135deg,var(--orange),var(--orange-2));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-stat-label{font-size:11px;color:var(--ink-3);margin-top:4px;font-weight:500}
-.hero-region-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:700px;margin:32px auto 0}
+.hero-region-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;max-width:700px;margin:32px auto 0}
 .hero-region{padding:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);text-align:center}
 .hero-region-flag{font-size:22px;margin-bottom:6px}
 .hero-region-name{font-size:11px;color:var(--ink-3);font-weight:500;margin-bottom:4px}
@@ -212,7 +212,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
 .compare-table td{padding:12px 16px;font-size:13px;color:var(--ink-1);border-bottom:1px solid var(--border)}
 .compare-table tr:hover td{background:var(--surface-hover)}
 .compare-table .highlight{color:var(--orange);font-weight:700}
-.persona-compare-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.persona-compare-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:24px}
 .persona-compare-card{padding:24px 20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);text-align:center}
 .persona-compare-avatar{width:80px;height:80px;border-radius:50%;margin:0 auto 12px;overflow:hidden;border:2px solid var(--orange)}
 .persona-compare-avatar img{width:100%;height:100%;object-fit:cover}
@@ -289,13 +289,14 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
   <h1 class="hero-title">全球用户画像<br><span>体验分析报告</span></h1>
   <p class="hero-desc">基于 Firebase/GA4 · 友盟 · 东南亚品牌调研 · 北美英国用户画像 · 华信人咨询等多源数据，覆盖东南亚、北美、欧洲、中国四大市场的全维度 UX 数据洞察</p>
   <div class="hero-stats">
-    <div class="hero-stat"><div class="hero-stat-num">235万</div><div class="hero-stat-label">全球 MAU</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">294万</div><div class="hero-stat-label">全球 MAU</div></div>
   </div>
   <div class="hero-region-grid">
-    <div class="hero-region"><div class="hero-region-flag">🌏</div><div class="hero-region-name">东南亚+其他</div><div class="hero-region-mau">~168万</div><div class="hero-region-pct">占全球 ~71%<span class="infer-badge">含中东/拉美</span></div></div>
-    <div class="hero-region"><div class="hero-region-flag">🇪🇺</div><div class="hero-region-name">欧洲</div><div class="hero-region-mau">~41万</div><div class="hero-region-pct">占全球 ~17%<span class="infer-badge">推断</span></div></div>
-    <div class="hero-region"><div class="hero-region-flag">🇨🇳</div><div class="hero-region-name">中国</div><div class="hero-region-mau">~59万</div><div class="hero-region-pct">占全球 ~25%<span class="infer-badge">推断</span></div></div>
-    <div class="hero-region"><div class="hero-region-flag">🇺🇸</div><div class="hero-region-name">北美</div><div class="hero-region-mau">~13万</div><div class="hero-region-pct">占全球 ~6%<span class="infer-badge">推断</span></div></div>
+    <div class="hero-region"><div class="hero-region-flag">🌏</div><div class="hero-region-name">东南亚+其他</div><div class="hero-region-mau">168万</div><div class="hero-region-pct">占全球 ~57%</div></div>
+    <div class="hero-region"><div class="hero-region-flag">🇪🇺</div><div class="hero-region-name">欧洲</div><div class="hero-region-mau">41万</div><div class="hero-region-pct">占全球 ~14%</div></div>
+    <div class="hero-region"><div class="hero-region-flag">🇨🇳</div><div class="hero-region-name">中国</div><div class="hero-region-mau">59万</div><div class="hero-region-pct">占全球 ~20%</div></div>
+    <div class="hero-region"><div class="hero-region-flag">🇺🇸</div><div class="hero-region-name">北美</div><div class="hero-region-mau">13万</div><div class="hero-region-pct">占全球 ~5%</div></div>
+    <div class="hero-region"><div class="hero-region-flag">🌍</div><div class="hero-region-name">其他</div><div class="hero-region-mau">13万</div><div class="hero-region-pct">占全球 ~4%</div></div>
   </div>
   <div class="data-sources" style="max-width:800px;margin:24px auto 0">
     <div class="data-sources-title">全球用户占比数据来源</div>
@@ -305,22 +306,25 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
     <br>
     <span style="font-size:10px;color:var(--ink-3);line-height:1.8;display:block;margin-top:8px">
       <span class="infer-badge">推断标注</span>
-      各市场占比 = 该地区MAU ÷ 全球235万MAU，数据源自Int.4 Firebase按App stream分区 + Int.5 友盟。
+      各市场占比 = 该地区MAU ÷ 全球294万MAU，数据源自Int.4 Firebase按App stream分区 + Int.5 友盟。
     </span>
     <span style="font-size:10px;color:var(--ink-3);line-height:1.8;display:block;margin-top:4px">
-      · <strong style="color:var(--ink-2)">东南亚+其他 ~71%（168万）</strong>：Int.4"国际版"App含东南亚+中东+拉美等多地区，无法精确拆分东南亚单独MAU，~71%为国际版整体占比，精确东南亚份额需公司BI数据验证
+      · <strong style="color:var(--ink-2)">东南亚+其他 ~57%（168万）</strong>：Firebase"国际版"App stream，含东南亚+中东+拉美等多地区
     </span>
     <span style="font-size:10px;color:var(--ink-3);line-height:1.8;display:block">
-      · <strong style="color:var(--ink-2)">欧洲 ~17%（41万）</strong>：Int.4"国际版"App stream中欧洲区MAU推算，含英国/德国/法国/意大利/西班牙等，精确国别拆分需公司BI验证（<a href="https://www.mordorintelligence.com/industry-reports/europe-dashboard-camera-market" target="_blank">Ext.15 Mordor Intelligence 2026</a>参考）
+      · <strong style="color:var(--ink-2)">欧洲 ~14%（41万）</strong>：Int.4"国际版"App stream中欧洲区MAU推算，含英国/德国/法国/意大利/西班牙等，精确国别拆分需公司BI验证（<a href="https://www.mordorintelligence.com/industry-reports/europe-dashboard-camera-market" target="_blank">Ext.15 Mordor Intelligence 2026</a>参考）
     </span>
     <span style="font-size:10px;color:var(--ink-3);line-height:1.8;display:block">
-      · <strong style="color:var(--ink-2)">中国 ~25%（59万）</strong>：Int.5 友盟直接数据，中国区独立App（70迈全家桶/70迈）MAU合计
+      · <strong style="color:var(--ink-2)">中国 ~20%（59万）</strong>：Int.5 友盟直接数据，中国区独立App（70迈全家桶/70迈）MAU合计
     </span>
     <span style="font-size:10px;color:var(--ink-3);line-height:1.8;display:block">
-      · <strong style="color:var(--ink-2)">北美 ~6%（13万）</strong>：Int.4"国际版"App stream中北美区MAU推算，含美国/加拿大，精确拆分需公司BI验证（<a href="https://www.mordorintelligence.com/industry-reports/north-america-dashboard-camera-market" target="_blank">Ext.14 Mordor Intelligence 2026</a>参考）
+      · <strong style="color:var(--ink-2)">北美 ~5%（13万）</strong>：Int.4"国际版"App stream中北美区MAU推算，含美国/加拿大，精确拆分需公司BI验证（<a href="https://www.mordorintelligence.com/industry-reports/north-america-dashboard-camera-market" target="_blank">Ext.14 Mordor Intelligence 2026</a>参考）
+    </span>
+    <span style="font-size:10px;color:var(--ink-3);line-height:1.8;display:block">
+      · <strong style="color:var(--ink-2)">其他 ~4%（13万）</strong>：Firebase其他stream（俄罗斯等）
     </span>
     <span style="font-size:10px;color:var(--ink-3);line-height:1.8;display:block;margin-top:6px">
-      注意：各地区MAU之和（281万）大于全球总数（235万），因多端用户去重统计差异。精确地区份额需公司BI数据验证。
+      全球MAU合计294万（Firebase 235万 + 友盟中国59万），各市场占比基于294万计算，合计100%。
     </span>
   </div>
 </section>
@@ -381,7 +385,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
         <div class="persona-detail"><div class="persona-detail-label">车型</div><div class="persona-detail-value">Proton X70 (SUV)<span class="infer-badge">推断</span></div></div>
         <div class="persona-detail"><div class="persona-detail-label">价格接受</div><div class="persona-detail-value">RM 200-500（￥300-800）</div></div>
         <div class="persona-detail"><div class="persona-detail-label">性别</div><div class="persona-detail-value">男性（80-98%）</div></div>
-        <div class="persona-detail"><div class="persona-detail-label">全球份额</div><div class="persona-detail-value">~71%<span class="infer-badge">推断</span></div></div>
+        <div class="persona-detail"><div class="persona-detail-label">全球份额</div><div class="persona-detail-value">~57%</div></div>
       </div>
     </div>
   </div>
@@ -485,7 +489,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
     <div class="metric-card"><div class="metric-label">品牌定位感知</div><div class="metric-value" style="font-size:16px">中档偏上品质选择</div></div>
     <div class="metric-card"><div class="metric-label">性价比关注度</div><div class="metric-value orange">42%</div><div class="metric-sub">泰国高达61%</div></div>
     <div class="metric-card"><div class="metric-label">品牌关联问题</div><div class="metric-value" style="font-size:14px;color:var(--red)">部分误认为小米子品牌<span class="infer-badge">推断</span></div><div class="metric-sub">小米品牌关联度高，影响独立品牌认知</div></div>
-    <div class="metric-card"><div class="metric-label">全球用户份额</div><div class="metric-value">~71%<span class="infer-badge">推断</span></div><div class="metric-sub">第一大海外市场（含中东/拉美）</div></div>
+    <div class="metric-card"><div class="metric-label">全球用户份额</div><div class="metric-value">~57%</div><div class="metric-sub">第一大市场</div></div>
   </div>
 
   <div class="sub-title">小米品牌关联度分析</div>
@@ -585,7 +589,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
         <div class="persona-detail"><div class="persona-detail-label">车型</div><div class="persona-detail-value">Ford F-150（皮卡）<span class="infer-badge">推断</span></div></div>
         <div class="persona-detail"><div class="persona-detail-label">价格接受</div><div class="persona-detail-value">$100-$250</div></div>
         <div class="persona-detail"><div class="persona-detail-label">性别</div><div class="persona-detail-value">男性（84%）</div></div>
-        <div class="persona-detail"><div class="persona-detail-label">全球份额</div><div class="persona-detail-value">~6%<span class="infer-badge">推断</span></div></div>
+        <div class="persona-detail"><div class="persona-detail-label">全球份额</div><div class="persona-detail-value">~5%</div></div>
       </div>
     </div>
   </div>
@@ -684,7 +688,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
     <div class="metric-card"><div class="metric-label">品牌定位感知</div><div class="metric-value" style="font-size:16px">高性价比替代品</div><div class="metric-sub">vs Garmin/BlackVue</div></div>
     <div class="metric-card"><div class="metric-label">App Store 评分</div><div class="metric-value" style="color:var(--red)">2.1/5</div><div class="metric-sub">全球最低 ⚠️</div></div>
     <div class="metric-card"><div class="metric-label">品牌关联问题</div><div class="metric-value" style="font-size:14px;color:var(--red)">小米关联度中等<span class="infer-badge">推断</span></div><div class="metric-sub">部分用户通过小米有品众筹认知70mai</div></div>
-    <div class="metric-card"><div class="metric-label">全球用户份额</div><div class="metric-value">~6%<span class="infer-badge">推断</span></div></div>
+    <div class="metric-card"><div class="metric-label">全球用户份额</div><div class="metric-value">~5%</div></div>
   </div>
   <div class="sub-title">小米品牌关联度分析</div>
   <div class="insight-grid">
@@ -786,7 +790,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
         <div class="persona-detail"><div class="persona-detail-label">车型</div><div class="persona-detail-value">Range Rover Evoque<span class="infer-badge">推断</span></div></div>
         <div class="persona-detail"><div class="persona-detail-label">价格接受</div><div class="persona-detail-value">£80-£200（￥700-1,800）</div></div>
         <div class="persona-detail"><div class="persona-detail-label">性别</div><div class="persona-detail-value">男性（~80%）</div></div>
-        <div class="persona-detail"><div class="persona-detail-label">全球份额</div><div class="persona-detail-value">~17%<span class="infer-badge">推断</span></div></div>
+        <div class="persona-detail"><div class="persona-detail-label">全球份额</div><div class="persona-detail-value">~14%</div></div>
       </div>
     </div>
   </div>
@@ -884,7 +888,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
     <div class="metric-card"><div class="metric-label">品牌定位感知</div><div class="metric-value" style="font-size:16px">高性价比替代品</div><div class="metric-sub">vs Nextbase/Garmin · "中国产品风格"</div></div>
     <div class="metric-card"><div class="metric-label">Nextbase+Garmin</div><div class="metric-value orange">35-40%<span class="infer-badge">推断</span></div><div class="metric-sub">合计市场份额</div></div>
     <div class="metric-card"><div class="metric-label">品牌关联问题</div><div class="metric-value" style="font-size:14px;color:var(--yellow)">小米关联度较低<span class="infer-badge">推断</span></div><div class="metric-sub">主要来自手机/IoT认知，但SU7可能增加关联</div></div>
-    <div class="metric-card"><div class="metric-label">全球用户份额</div><div class="metric-value">~17%<span class="infer-badge">推断</span></div></div>
+    <div class="metric-card"><div class="metric-label">全球用户份额</div><div class="metric-value">~14%</div></div>
   </div>
   <div class="sub-title">小米品牌关联度分析</div>
   <div class="insight-grid">
@@ -987,7 +991,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
         <div class="persona-detail"><div class="persona-detail-label">车型</div><div class="persona-detail-value">比亚迪宋PLUS新能源<span class="infer-badge">推断</span></div></div>
         <div class="persona-detail"><div class="persona-detail-label">价格接受</div><div class="persona-detail-value">￥300-500</div></div>
         <div class="persona-detail"><div class="persona-detail-label">性别</div><div class="persona-detail-value">男性（67%）</div></div>
-        <div class="persona-detail"><div class="persona-detail-label">全球份额</div><div class="persona-detail-value">~25%<span class="infer-badge">推断</span></div></div>
+        <div class="persona-detail"><div class="persona-detail-label">全球份额</div><div class="persona-detail-value">~20%</div></div>
       </div>
     </div>
   </div>
@@ -1085,7 +1089,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
     <div class="metric-card"><div class="metric-label">品牌消费意愿</div><div class="metric-value orange">63%</div><div class="metric-sub">优先考虑品牌41% + 只买知名品牌22%</div></div>
     <div class="metric-card"><div class="metric-label">品牌信任度</div><div class="metric-value">66%</div><div class="metric-sub">非常信任38% + 比较信任28%</div></div>
     <div class="metric-card"><div class="metric-label">品牌关联问题</div><div class="metric-value" style="font-size:14px;color:var(--red)">小米关联度较高<span class="infer-badge">推断</span></div><div class="metric-sub">中国市场用户最容易将70mai与小米关联</div></div>
-    <div class="metric-card"><div class="metric-label">全球用户份额</div><div class="metric-value">~25%<span class="infer-badge">推断</span></div></div>
+    <div class="metric-card"><div class="metric-label">全球用户份额</div><div class="metric-value">~20%</div></div>
     <div class="metric-card"><div class="metric-label">更换品牌原因</div><div class="metric-value" style="font-size:16px">画质36% · 稳定性28%</div></div>
   </div>
   <div class="sub-title">小米品牌关联度分析</div>
@@ -1158,7 +1162,7 @@ body{font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,"SF Pro
     <thead><tr><th>指标</th><th>🌏 东南亚+其他</th><th>🇺🇸 北美</th><th>🇪🇺 欧洲</th><th>🇨🇳 中国</th></tr></thead>
     <tbody>
       <tr><td>MAU</td><td class="highlight">168万</td><td>13.1万</td><td>41.0万</td><td>58.7万</td></tr>
-      <tr><td>全球用户份额</td><td class="highlight">~71%<br><span style="font-size:9px;color:var(--ink-3)">含中东/拉美</span></td><td>~6%</td><td>~17%</td><td>~25%</td></tr>
+      <tr><td>全球用户份额</td><td class="highlight">~57%</td><td>~5%</td><td>~14%</td><td>~20%</td></tr>
       <tr><td>月新增</td><td class="highlight">29.2万</td><td>3.3万</td><td>9.0万</td><td>8.9万</td></tr>
       <tr><td>新增/MAU比</td><td>16-18%</td><td class="highlight">25-26%</td><td>22.0%</td><td>14-15%</td></tr>
       <tr><td>NPS</td><td class="highlight">48</td><td>~42</td><td>~40</td><td>~35</td></tr>
